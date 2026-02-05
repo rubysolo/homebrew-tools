@@ -5,20 +5,20 @@
 class Envisible < Formula
   desc "Simple encrypted configuration management tool."
   homepage "https://github.com/rubysolo/envisible"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.3/envisible_Darwin_x86_64.tar.gz"
-      sha256 "cab5221e4e573f29885cb07dac5e8f5b3f40535f82eff2d62e04ed34fede00a1"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.4/envisible_darwin_amd64.tar.gz"
+      sha256 "b75c99ecec5c546690e513e622909e05d3e4f5ff7617ebe1ed5c15b016df62db"
 
       def install
         bin.install "envisible"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.3/envisible_Darwin_arm64.tar.gz"
-      sha256 "f80b7aadbc3b1c3f212fa91be4f36aea505767f29b6d94c27a49a88952837b31"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.4/envisible_darwin_arm64.tar.gz"
+      sha256 "f635bf3d81ce05eff80b2602d8ea07870d8ed3f4f8b5777c18703dfe4a2872d6"
 
       def install
         bin.install "envisible"
@@ -28,15 +28,15 @@ class Envisible < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.3/envisible_Linux_x86_64.tar.gz"
-      sha256 "61af845aa69ab9e53944f2cfcd100da2db7ba0335327ac4b3f8506f7e5e0c820"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.4/envisible_linux_amd64.tar.gz"
+      sha256 "0ecb86fb512b6bec105d6cfba3c38b9d0cf2ddf4c8cd30f30472e2d3f8edfa9f"
       def install
         bin.install "envisible"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.3/envisible_Linux_arm64.tar.gz"
-      sha256 "07628fef31acf04d356422ca73a1331088ba0b030e0dd54a17c25dbbf9ec6e02"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.4/envisible_linux_arm64.tar.gz"
+      sha256 "31d4a15ae2c12a36b525b77fb506eb9ce807b64525ae0ac59bacb2c5541b4642"
       def install
         bin.install "envisible"
       end
