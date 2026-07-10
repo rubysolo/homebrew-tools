@@ -5,20 +5,20 @@
 class Envisible < Formula
   desc "Simple encrypted configuration management tool."
   homepage "https://github.com/rubysolo/envisible"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.6/envisible_darwin_amd64.tar.gz"
-      sha256 "5f43ce2e1e975cc2844786df57eadd021baf6aa74f2f945b635166f3b3a681d7"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.7/envisible_darwin_amd64.tar.gz"
+      sha256 "15451c7100a854ad6fc0a40821a148f95dbe52669ddf1732a8927762cb919f92"
 
       define_method(:install) do
         bin.install "envisible"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.6/envisible_darwin_arm64.tar.gz"
-      sha256 "4caf40ce8267026bd61d386412744a97eb2aadc5f6c2999b39d83e7fcd881671"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.7/envisible_darwin_arm64.tar.gz"
+      sha256 "05430bbe4ce99b57869ab196bbd7195d29f010cfc4cb79c8828cf78770e9b426"
 
       define_method(:install) do
         bin.install "envisible"
@@ -28,15 +28,15 @@ class Envisible < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.6/envisible_linux_amd64.tar.gz"
-      sha256 "6203767879a88dbacaa8d18e3f692d6a5c7a75dad72fc32382a7ee211af26d31"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.7/envisible_linux_amd64.tar.gz"
+      sha256 "2fb42593ee0ea984508471f0503f25c04fedb91451413e2cdc0c9c33e9f12d00"
       define_method(:install) do
         bin.install "envisible"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rubysolo/envisible/releases/download/v0.0.6/envisible_linux_arm64.tar.gz"
-      sha256 "7addc6b13187e89d8fb64253e8e6b21ac609ebfb0929bea1bd127579b4c9ac8d"
+      url "https://github.com/rubysolo/envisible/releases/download/v0.0.7/envisible_linux_arm64.tar.gz"
+      sha256 "f476156c8c2a114b17ad134facf87790352f3c1b1c317804a531f9431141f82f"
       define_method(:install) do
         bin.install "envisible"
       end
